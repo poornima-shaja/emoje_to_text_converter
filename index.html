@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert emoje into text</title>
+</head>
+<body>
+    <h1>Emoje to text converter</h1>
+    <form action="/" method = 'post'>
+        <label for="text">Your Emoje</label>
+        <input type="text" id="text" name="emoje_list"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      {% if result %}
+      <h2>Result:</h2>
+      <p>{{ result }}</p>
+  {% endif %}
+</body>
+</html>
